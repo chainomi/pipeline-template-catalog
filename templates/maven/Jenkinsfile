@@ -8,7 +8,7 @@ pipeline {
     stage('Agent') {
       agent { label 'maven' }
       stages {
-        stage("Set GitHub Branch Protection") {
+        stage("Set GitHub 1 Branch Protection") {
           when { 
             anyOf {
               expression { BUILD_NUMBER == "1" }
